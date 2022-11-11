@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1181" height="1181" viewBox="0 0 1181 1181">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ea67fa;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #f1a3fb;
+      }
+    </style>
+  </defs>
+  <path id="Rektangel_1" data-name="Rektangel 1" class="cls-1" d="M131,0h919a131,131,0,0,1,131,131v919a131,131,0,0,1-131,131H131A131,131,0,0,1,0,1050V131A131,131,0,0,1,131,0Z"/>
+  <path id="Rektangel_1_kopiera" data-name="Rektangel 1 kopiera" class="cls-2" d="M138.959,47.959H1042.04a91,91,0,0,1,91,91V1042.04a91,91,0,0,1-91,91H138.959a91,91,0,0,1-91-91V138.959A91,91,0,0,1,138.959,47.959Z"/>
+  <path id="Rektangel_2" data-name="Rektangel 2" class="cls-3" d="M283,176H386a48,48,0,0,1,48,48V958a48,48,0,0,1-48,48H283a48,48,0,0,1-48-48V224A48,48,0,0,1,283,176Z"/>
+  <path id="Rektangel_2_kopiera" data-name="Rektangel 2 kopiera" class="cls-3" d="M795.562,175.625h103a48,48,0,0,1,48,48v734a48,48,0,0,1-48,48h-103a48,48,0,0,1-48-47.995v-734A48,48,0,0,1,795.562,175.625Z"/>
+</svg>

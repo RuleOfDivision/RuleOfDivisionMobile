@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1181" height="1181" viewBox="0 0 1181 1181">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ea67fa;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #f1a3fb;
+      }
+
+      .cls-3 {
+        stroke: #000;
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <path id="Rektangel_1" data-name="Rektangel 1" class="cls-1" d="M131,0h919a131,131,0,0,1,131,131v919a131,131,0,0,1-131,131H131A131,131,0,0,1,0,1050V131A131,131,0,0,1,131,0Z"/>
+  <path id="Rektangel_1_kopiera" data-name="Rektangel 1 kopiera" class="cls-2" d="M138.959,47.959H1042.04a91,91,0,0,1,91,91V1042.04a91,91,0,0,1-91,91H138.959a91,91,0,0,1-91-91V138.959A91,91,0,0,1,138.959,47.959Z"/>
+  <path id="Triangel_1" data-name="Triangel 1" class="cls-3" d="M958.638,562.784a32,32,0,0,1,.018,55.336L308.475,996.235a32,32,0,0,1-48.087-27.652L260.132,212.8A32,32,0,0,1,308.2,185.111Z"/>
+</svg>
