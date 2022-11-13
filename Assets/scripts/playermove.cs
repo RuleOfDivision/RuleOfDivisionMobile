@@ -59,6 +59,22 @@ public class playermove : MonoBehaviour
         Debug.Log("Hello");
         return;
     }
+    Transform GetClosestEnemy(Transform[] enemies)
+    {
+        Transform tMin = null;
+        float minDist = Mathf.Infinity;
+        Vector3 currentPos = playerPos.position;
+        foreach (Transform t in enemies)
+        {
+            float dist = Vector3.Distance(t.position, currentPos);
+            if (dist < minDist)
+            {
+                tMin = t;
+                minDist = dist;
+            }
+        }
+        return tMin;
+    }
     /*Transform GetClosestEnemy(Transform[] enemies)
     {
         Transform tMin = null;
