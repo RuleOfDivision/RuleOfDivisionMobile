@@ -759,7 +759,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6364693908644984923}
   m_Layer: 0
-  m_Name: phoneUI
+  m_Name: phoneUIGood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

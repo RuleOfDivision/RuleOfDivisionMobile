@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 9d3c6305682a9ba43b9c83e59d654e6c, type: 2}
---- !u!1 &52135281 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 490161344332941178, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
-  m_PrefabInstance: {fileID: 490161344281854475}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &55357447
 GameObject:
   m_ObjectHideFlags: 0
@@ -11900,17 +11895,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6581984412173498731, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
   m_PrefabInstance: {fileID: 2928146071684595363}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &632194290 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 490161344895698681, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
-  m_PrefabInstance: {fileID: 490161344281854475}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &682368710
 GameObject:
   m_ObjectHideFlags: 0
@@ -33716,7 +33700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83a3ab7d3b44c9d47b4c699db217fcfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hearts: {fileID: 632194290}
+  hearts: {fileID: 0}
   heartSprites:
   - {fileID: 21300000, guid: 387ccb1316160d34c87be750da690e52, type: 3}
   - {fileID: 21300000, guid: a1a317ebae5b4c942b9b28c0397cc194, type: 3}
@@ -40378,11 +40362,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &1787164184 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 490161343635764243, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
-  m_PrefabInstance: {fileID: 490161344281854475}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1794143407
 GameObject:
   m_ObjectHideFlags: 0
@@ -50458,17 +50437,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1969856584}
   m_CullTransparentMesh: 1
---- !u!114 &2029843161 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 490161343877394642, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
-  m_PrefabInstance: {fileID: 490161344281854475}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2041210938
 GameObject:
   m_ObjectHideFlags: 0
@@ -52383,16 +52351,28 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6364693908644984923, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6364693908644984923, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6364693908644984923, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6364693908644984923, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -223.65125
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6364693908644984923, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 103.2367
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6364693908644984923, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15.180439
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6364693908644984923, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
       propertyPath: m_LocalRotation.w
@@ -52458,23 +52438,23 @@ PrefabInstance:
     - target: {fileID: 2928146072156544954, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: joystick
       value: 
-      objectReference: {fileID: 8368652423692392259}
+      objectReference: {fileID: 0}
     - target: {fileID: 2928146072156544954, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: plusButton
       value: 
-      objectReference: {fileID: 52135281}
+      objectReference: {fileID: 0}
     - target: {fileID: 2928146072156544954, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: minusButton
       value: 
-      objectReference: {fileID: 1787164184}
+      objectReference: {fileID: 0}
     - target: {fileID: 2928146072156544954, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: attackButton
       value: 
-      objectReference: {fileID: 6666917774140046378}
+      objectReference: {fileID: 0}
     - target: {fileID: 2928146072156544954, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: currentNumUI
       value: 
-      objectReference: {fileID: 2029843161}
+      objectReference: {fileID: 0}
     - target: {fileID: 2928146072660623224, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -52557,19 +52537,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
---- !u!1 &6666917774140046378 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6505662149922569761, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
-  m_PrefabInstance: {fileID: 490161344281854475}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8368652423692392259 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8281567962203805000, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
-  m_PrefabInstance: {fileID: 490161344281854475}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
