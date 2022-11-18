@@ -19,6 +19,8 @@ public class playermove : MonoBehaviour
       public Joystick joystick;    //for touch
       private bool attacking;
       public Transform attackBox;
+      public float chambersRadius = 5000f; //traffy reference??
+      public float dist;
       public LayerMask whatIsEnemy;
       private Animator playerAnimator;
       public Animator swordAnimator;
@@ -35,7 +37,9 @@ public class playermove : MonoBehaviour
 
       public Transform playerPos;
       private Vector3 targetPos;
-      var gameObjects = new List<GameObject>();
+      List<GameObject> gameObjects = new List<GameObject>();
+      List<Transform> transforms = new List<Transform>();
+
 
       /*outdated targeting system
       public Transform enem0;
@@ -61,14 +65,14 @@ public class playermove : MonoBehaviour
             Debug.Log("Hello");
             return;
       }
-      Transform GetClosestEnemy(Transform[] enemies)
+      Transform GetClosestEnemy(List<Transform> enemies)
       {
             Transform tMin = null;
             float minDist = Mathf.Infinity;
             Vector3 currentPos = playerPos.position;
             foreach (Transform t in enemies)
             {
-                  float dist = Vector3.Distance(t.position, currentPos);
+                  dist = Vector3.Distance(t.position, currentPos);
                   if (dist < minDist)
                   {
                         tMin = t;
@@ -97,13 +101,12 @@ public class playermove : MonoBehaviour
             //Vector3 lookTarget = GetClosestEnemy(enemies).position;
             //playerPos.LookAt(lookTarget);
 
-            Collider[] colList = Physics.OverlapBox(attackBox.position, attackBox.localScale / 1, Quaternion.identity, whatIsEnemy);
-            for (int i = 0; i < colList.Length; i++)
+            Collider[] targetColList = Physics.OverlapSphere(playerPos.position, chambersRadius, whatIsEnemy);
+            for (int i = 0; i < targetColList.Length; i++)
             {
-                  gameObjects.Add(colList[i].GetComponent<GameObject>());
-
+                  transforms.Add(targetColList[i].GetComponent<Transform>());
             }
-            GetClosestEnemy(enemList);
+            GetClosestEnemy(transforms);
 
       }
       public void Attack()
