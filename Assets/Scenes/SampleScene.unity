@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 9d3c6305682a9ba43b9c83e59d654e6c, type: 2}
+--- !u!1 &49280371 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3821680077390646029, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
+  m_PrefabInstance: {fileID: 490161344281854475}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &55357447
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,7 +269,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-8320
+  m_Name: pb_Mesh-1494
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6866,6 +6871,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 113.4}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &540594619 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7605721794192863830, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
+  m_PrefabInstance: {fileID: 490161344281854475}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &567904047
 GameObject:
   m_ObjectHideFlags: 0
@@ -22409,7 +22419,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-8330
+  m_Name: pb_Mesh-1504
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -39643,6 +39653,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561955269}
   m_CullTransparentMesh: 1
+--- !u!114 &1562458873 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4695627967696509247, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
+  m_PrefabInstance: {fileID: 490161344281854475}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1564764543
 GameObject:
   m_ObjectHideFlags: 0
@@ -39972,7 +39993,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-8340
+  m_Name: pb_Mesh-1514
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40130,6 +40151,17 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!114 &1718087468 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3821680077254032549, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
+  m_PrefabInstance: {fileID: 490161344281854475}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1749447339
 GameObject:
   m_ObjectHideFlags: 0
@@ -40503,7 +40535,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-8350
+  m_Name: pb_Mesh-1524
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -52438,23 +52470,23 @@ PrefabInstance:
     - target: {fileID: 2928146072156544954, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: joystick
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1562458873}
     - target: {fileID: 2928146072156544954, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: plusButton
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 49280371}
     - target: {fileID: 2928146072156544954, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: minusButton
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 49280371}
     - target: {fileID: 2928146072156544954, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: attackButton
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 540594619}
     - target: {fileID: 2928146072156544954, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: currentNumUI
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1718087468}
     - target: {fileID: 2928146072660623224, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: m_Mesh
       value: 
