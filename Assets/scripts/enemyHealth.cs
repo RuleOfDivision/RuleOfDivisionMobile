@@ -42,6 +42,7 @@ public class enemyHealth : MonoBehaviour
             Instantiate(deadprefab, transform.position, Quaternion.identity);
             //UI.GetComponent<UI>().enemyDefeated();
             roundManager.GetComponent<RoundManager>().defeatedEnemy();
+            //!fix
             Destroy(gameObject);
         }
 

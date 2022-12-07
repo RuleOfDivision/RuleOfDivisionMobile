@@ -111,7 +111,7 @@ public class playermove : MonoBehaviour
 
       }
       public void Attack()
-      {
+      {            
             if (attacking == false)
             {
                   StartCoroutine(DivideBy(divider));
