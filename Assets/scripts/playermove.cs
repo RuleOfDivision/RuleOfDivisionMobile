@@ -11,6 +11,7 @@ public class playermove : MonoBehaviour
       [SerializeField] private float speed;
       public GameObject attackButton;
       public GameObject plusButton;
+      public Transform tMin;
       public GameObject minusButton;
       Ray cameraRay;                // The ray that is cast from the camera to the mouse position
       RaycastHit cameraRayHit;    // The object that the ray hits
@@ -67,7 +68,7 @@ public class playermove : MonoBehaviour
       }
       Transform GetClosestEnemy(List<Transform> enemies)
       {
-            Transform tMin = null;
+            tMin = null;
             float minDist = Mathf.Infinity;
             Vector3 currentPos = playerPos.position;
             foreach (Transform t in enemies)
@@ -98,14 +99,14 @@ public class playermove : MonoBehaviour
             swordAnimator.SetBool("swing", attacking);
             Debug.Log(divider);
             currentNumUI.text = "Nämnare: " + divider;
-            //Vector3 lookTarget = GetClosestEnemy(enemies).position;
-            //playerPos.LookAt(lookTarget);
 
             Collider[] targetColList = Physics.OverlapSphere(playerPos.position, chambersRadius, whatIsEnemy);
             for (int i = 0; i < targetColList.Length; i++)
             {
                   transforms.Add(targetColList[i].GetComponent<Transform>());
             }
+            tMin = GetClosestEnemy(transforms);
+            playerPos.LookAt(tMin);
             //transform.right = GetClosestEnemy(transforms).position;
 
       }
