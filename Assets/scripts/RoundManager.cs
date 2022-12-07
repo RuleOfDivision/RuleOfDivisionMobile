@@ -20,6 +20,7 @@ public class RoundManager : MonoBehaviour
     public GameObject manager;
     public GameObject wrongMath;
     public GameObject UI;
+    public GameObject phoneUI;
     public TextMeshProUGUI reasonText;
     public TextMeshProUGUI levelText; 
 
@@ -70,6 +71,7 @@ public class RoundManager : MonoBehaviour
             //health
             curEnemy.GetComponent<enemyHealth>().manager = manager;
             curEnemy.GetComponent<enemyHealth>().wrongmath = wrongMath;
+            curEnemy.GetComponent<enemyHealth>().phoneUI = phoneUI;
             curEnemy.GetComponent<enemyHealth>().UI = UI;
             curEnemy.GetComponent<enemyHealth>().reason = reasonText;
             //move

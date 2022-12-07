@@ -13,6 +13,7 @@ public class enemyHealth : MonoBehaviour
     public float target;
     public GameObject deadprefab;
     public GameObject wrongmath;
+    public GameObject phoneUI;
     public GameObject UI;
 
     private float original;
@@ -46,6 +47,7 @@ public class enemyHealth : MonoBehaviour
 
         if(health < target || (health % 1) != 0 )
         {
+            phoneUI.SetActive(false);
             wrongmath.SetActive(true);
             if(health < target)
             {

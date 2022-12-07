@@ -269,7 +269,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1494
+  m_Name: pb_Mesh-5708
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -801,7 +801,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28510
+  m_Name: pb_Mesh27288
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22419,7 +22419,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1504
+  m_Name: pb_Mesh-5718
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -33670,6 +33670,7 @@ MonoBehaviour:
   manager: {fileID: 1208773824}
   wrongMath: {fileID: 1089915051}
   UI: {fileID: 1208773824}
+  phoneUI: {fileID: 1827709655}
   reasonText: {fileID: 531294332}
   levelText: {fileID: 2041210940}
   playerLoc: {fileID: 611295515}
@@ -39283,7 +39284,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28350
+  m_Name: pb_Mesh27126
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -39993,7 +39994,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1514
+  m_Name: pb_Mesh-5728
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40535,7 +40536,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1524
+  m_Name: pb_Mesh-5738
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -45581,6 +45582,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823095314}
   m_CullTransparentMesh: 1
+--- !u!1 &1827709655 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5502574514513670866, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
+  m_PrefabInstance: {fileID: 490161344281854475}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1883389678
 GameObject:
   m_ObjectHideFlags: 0
@@ -51112,7 +51118,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28776
+  m_Name: pb_Mesh27556
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -52370,6 +52376,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 611295513}
+    - target: {fileID: 3821680077013317734, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 611295513}
+    - target: {fileID: 3821680077013317734, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: decreaseDiv
+      objectReference: {fileID: 0}
+    - target: {fileID: 3821680077390646031, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 611295513}
+    - target: {fileID: 3821680077390646031, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: IncreaseDiv
+      objectReference: {fileID: 0}
     - target: {fileID: 5502574514513670866, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
       propertyPath: m_Icon
       value: 
@@ -52438,6 +52460,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 611295513}
+    - target: {fileID: 7605721794192863828, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 611295513}
+    - target: {fileID: 7605721794192863828, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Attack
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
 --- !u!1001 &2928146071684595363

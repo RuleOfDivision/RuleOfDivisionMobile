@@ -106,7 +106,7 @@ public class playermove : MonoBehaviour
             {
                   transforms.Add(targetColList[i].GetComponent<Transform>());
             }
-            GetClosestEnemy(transforms);
+            //transform.right = GetClosestEnemy(transforms).position;
 
       }
       public void Attack()
