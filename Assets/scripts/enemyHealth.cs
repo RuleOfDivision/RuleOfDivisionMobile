@@ -23,6 +23,7 @@ public class enemyHealth : MonoBehaviour
     public TextMeshProUGUI reason;
 
     public GameObject roundManager;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +44,7 @@ public class enemyHealth : MonoBehaviour
             //UI.GetComponent<UI>().enemyDefeated();
             roundManager.GetComponent<RoundManager>().defeatedEnemy();
             //!fix
+            player.GetComponent<playermove>().ReturntMin();
             Destroy(gameObject);
         }
 

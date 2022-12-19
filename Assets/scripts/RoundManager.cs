@@ -74,6 +74,7 @@ public class RoundManager : MonoBehaviour
             curEnemy.GetComponent<enemyHealth>().phoneUI = phoneUI;
             curEnemy.GetComponent<enemyHealth>().UI = UI;
             curEnemy.GetComponent<enemyHealth>().reason = reasonText;
+            curEnemy.GetComponent<enemyHealth>().player = playerLoc.gameObject;
             //move
             curEnemy.GetComponent<enemyMove>().playerLocation = playerLoc;
             curEnemy.GetComponent<enemyMove>().Canvas = canvas;

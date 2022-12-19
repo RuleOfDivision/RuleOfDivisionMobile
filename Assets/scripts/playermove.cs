@@ -82,6 +82,16 @@ public class playermove : MonoBehaviour
             }
             return tMin;
       }
+      public Transform ReturntMin(){
+
+            Collider[] targetColList = Physics.OverlapSphere(playerPos.position, chambersRadius, whatIsEnemy);
+            for (int i = 0; i < targetColList.Length; i++)
+            {
+                  transforms.Add(targetColList[i].GetComponent<Transform>());
+            }
+            tMin = GetClosestEnemy(transforms);
+            return tMin;
+      }
       void Update()
       {
             //moving
@@ -100,12 +110,7 @@ public class playermove : MonoBehaviour
             Debug.Log(divider);
             currentNumUI.text = "Nämnare: " + divider;
 
-            Collider[] targetColList = Physics.OverlapSphere(playerPos.position, chambersRadius, whatIsEnemy);
-            for (int i = 0; i < targetColList.Length; i++)
-            {
-                  transforms.Add(targetColList[i].GetComponent<Transform>());
-            }
-            tMin = GetClosestEnemy(transforms);
+            ReturntMin();
             playerPos.LookAt(tMin);
             //transform.right = GetClosestEnemy(transforms).position;
 
