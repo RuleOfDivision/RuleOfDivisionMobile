@@ -81,7 +81,6 @@ public class RoundManager : MonoBehaviour
 
             // targeting system
             //player.GetComponent<playermove>().enemies[i] = curEnemy.transform;
-            Debug.Log("here");
             //playerReference.GetComponent<PlayerMoveScriptName>().yourlistnamehere [i] = curEnemy.transform;
 
         }
