@@ -17,7 +17,7 @@ public class tutorial3Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(move.activeInHierarchy == false && look.activeInHierarchy == false)
+        if(move.activeInHierarchy == false  /*&& look.activeInHierarchy == false*/)
         {
             win.SetActive(true);
         }

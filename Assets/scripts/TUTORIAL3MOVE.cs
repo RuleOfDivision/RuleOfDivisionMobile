@@ -31,6 +31,10 @@ public class TUTORIAL3MOVE : MonoBehaviour
             if(colList[i].tag == "Player")
             {
                 Debug.Log("YES");
+                posIndex +=1;
+                Debug.Log(posIndex);
+                howManyLeft.text = posIndex.ToString() + "/" + "5";
+
                 moveOver = true;
                 break;
             }
@@ -40,6 +44,11 @@ public class TUTORIAL3MOVE : MonoBehaviour
             }
             i++;
         }
+        if(posIndex >4)
+        {
+            winScreen.SetActive(true);
+        }
+        
         if(posIndex < 5)
         {
             transform.position = positions[posIndex];
@@ -52,7 +61,7 @@ public class TUTORIAL3MOVE : MonoBehaviour
         
         if(posIndex < 6)
         {
-            howManyLeft.text = posIndex.ToString() + "/" + "5";
+            howManyLeft.text = posIndex + "/" + "5";
         }
         
         

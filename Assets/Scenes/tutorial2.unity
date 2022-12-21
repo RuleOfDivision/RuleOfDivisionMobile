@@ -31609,7 +31609,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "M\xE5l: Flytta muspekaren till den gula punkten p\xE5 marken."
+  m_text: "M\xE5l: \nG\xE5 n\xE4ra de gr\xF6na punkterna"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -39033,7 +39033,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576900871}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.8, y: -7.61, z: 21.5}
+  m_LocalPosition: {x: -1.1, y: -7.61, z: 22.4}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -39060,8 +39060,9 @@ MonoBehaviour:
     m_Bits: 8
   positions:
   - {x: 0, y: -7.61, z: 0}
-  - {x: -21, y: -7.61, z: 21.5}
+  - {x: -1, y: -7.61, z: 22.4}
   - {x: 19.1, y: -7.61, z: 4.3}
+  - {x: -16.2, y: -7.61, z: -17.5}
   winScreen: {fileID: 2072318945}
   player: {fileID: 2042395786}
   minDistForThisTutoral: 7.1
