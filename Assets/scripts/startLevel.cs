@@ -5,12 +5,15 @@ using UnityEngine;
 public class startLevel : MonoBehaviour
 {
     private bool ready;
+    public GameObject phoneUI;
     // Start is called before the first frame update
     void Start()
     {
         Time.timeScale = 0f;
         ready = false;
         StartCoroutine(startDelay());
+        phoneUI.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -20,6 +23,7 @@ public class startLevel : MonoBehaviour
         {
 
             gameObject.SetActive(false);
+            phoneUI.SetActive(true);
             Time.timeScale = 1f;
         }
     }

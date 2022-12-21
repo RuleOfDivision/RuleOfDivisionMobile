@@ -12,7 +12,7 @@ public class lookTutorial : MonoBehaviour
       private int posIndex;
       public GameObject winScreen;
       public GameObject player;
-      public float minDistForThisTutoral = 10f;
+      public float minDistForThisTutoral = 5f;
       public TextMeshProUGUI howManyLeft;
       Ray cameraRay;                // The ray that is cast from the camera to the mouse position
       RaycastHit cameraRayHit;
@@ -36,7 +36,7 @@ public class lookTutorial : MonoBehaviour
                   frames = 0;
             }
 
-            if (posIndex < 5)
+            if (posIndex <= 3)
             {
                   transform.position = positions[posIndex];
             }
@@ -45,13 +45,19 @@ public class lookTutorial : MonoBehaviour
                   winScreen.SetActive(true);
             }
 
-            if (posIndex < 6)
+            if (posIndex <= 3)
             {
-                  howManyLeft.text = posIndex.ToString() + "/" + "5";
+                  if(posIndex != 1){
+                  howManyLeft.text = posIndex + "/" + "3";
+                  }
+                  else{
+                        howManyLeft.text = (posIndex - 1)  + "/" + "3";
+                  }
             }
             if (player.GetComponent<playermove>().dist < minDistForThisTutoral)
             {
-                  Debug.Log("YES");
+                  Debug.Log("YES, " + transform.position);
+                  //!fel!
                   posIndex += 1;
                   correct.Play();
             }

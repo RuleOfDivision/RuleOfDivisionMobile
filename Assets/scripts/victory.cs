@@ -20,8 +20,9 @@ public class victory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.anyKey && waiting == true)
+        if(Input.touchCount > 0 && waiting == true)
         {
+            Debug.Log("yep. Here.");
             //SceneManager.LoadScene(nextLevel);
             PlayerPrefs.SetString("nextLevel", nextLevel);
             SceneManager.LoadScene("LoadingScreen");
