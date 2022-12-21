@@ -90,5 +90,6 @@ public class RoundManager : MonoBehaviour
     {
         enemiesleft -= 1;
         Debug.Log("defeated enemy");
+        playerLoc.gameObject.GetComponent<playermove>().enemyIsKill = true;
     }
 }

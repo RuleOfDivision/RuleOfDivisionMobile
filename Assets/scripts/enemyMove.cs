@@ -60,7 +60,7 @@ public class enemyMove : MonoBehaviour
 
     public IEnumerator attackPlayer()
     {
-        Debug.Log("STARTED");
+        //Debug.Log("STARTED ATTACK ON PLAYER");
         if(attacking == true)
         {
             yield break;
@@ -81,7 +81,7 @@ public class enemyMove : MonoBehaviour
         {
             if(colList[i].tag == "Player")
             {
-                Debug.Log("YES");
+                //Debug.Log("YES");
                 enemSound.Play();
                 Canvas.GetComponent<UI>().DecreaseHearts();
                 //colList[i].GetComponent<>()

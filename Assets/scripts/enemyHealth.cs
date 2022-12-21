@@ -44,9 +44,7 @@ public class enemyHealth : MonoBehaviour
             //UI.GetComponent<UI>().enemyDefeated();
             roundManager.GetComponent<RoundManager>().defeatedEnemy();
             //!fix
-            Debug.Log("here");
-            player.GetComponent<playermove>().ReturntMin();
-            
+            //player.GetComponent<playermove>();
             Destroy(gameObject);
         }
 

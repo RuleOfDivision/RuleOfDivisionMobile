@@ -39,7 +39,7 @@ public class UI : MonoBehaviour
 
     public void DecreaseHearts()
     {
-        Debug.Log("Gaming");
+        //Debug.Log("Gaming");
         health -= 1;
         if(health < 0)
         {

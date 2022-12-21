@@ -9,6 +9,7 @@ using TMPro;
 public class playermove : MonoBehaviour
 {
       private bool attacking;
+      public bool enemyIsKill; //!reference roundMgr
       private int TexIndex;
       public float divider;
       public float chambersRadius = 5000f; //traffy reference??
@@ -71,24 +72,40 @@ public class playermove : MonoBehaviour
             }
             return tMin;
       }
-      public Transform ReturntMin(){
+      /*public Transform ReturntMin(){
 
             Collider[] targetColList = Physics.OverlapSphere(playerPos.position, chambersRadius, whatIsEnemy);
-            if(
-                  enemyIsKill){
+            if(enemyIsKill){
+                  for (int i = 0; i < targetColList.Length; i++)
+                  {
+                        transforms.Remove(targetColList[i].GetComponent<Transform>());
+                        tMin = GetClosestEnemy(transforms);
+                  }
+                  enemyIsKill = false;
+                  return tMin;
+            }
+            else
+            {
+                  for (int i = 0; i < targetColList.Length; i++)
+                  {
+                  transforms.Add(targetColList[i].GetComponent<Transform>());
+                  tMin = GetClosestEnemy(transforms);
+                  }
                   Debug.Log("i was at house eating dorito when phone ring.");
                   return null;
             }
-            else{
-
+      }*/
+      public Transform ReturntMin()
+      {
+            Collider[] targetColList = Physics.OverlapSphere(playerPos.position, chambersRadius, whatIsEnemy);
             for (int i = 0; i < targetColList.Length; i++)
             {
                   transforms.Add(targetColList[i].GetComponent<Transform>());
             }
             tMin = GetClosestEnemy(transforms);
             return tMin;
-            }
       }
+
       void Update()
       {
             //moving
@@ -106,8 +123,16 @@ public class playermove : MonoBehaviour
             swordAnimator.SetBool("swing", attacking);
             currentNumUI.text = "Nämnare: " + divider;
 
-            ReturntMin();
-            playerPos.LookAt(tMin);
+            if(enemyIsKill)
+            {
+                  transforms.Clear();
+                  ReturntMin();
+            }
+            else
+            {
+                  ReturntMin();
+                  playerPos.LookAt(tMin);
+            }
             //transform.right = GetClosestEnemy(transforms).position;
 
       }

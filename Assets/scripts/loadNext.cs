@@ -32,7 +32,7 @@ public class loadNext : MonoBehaviour
         {
             float progress = Mathf.Clamp01(operation.progress / .9f);
             percentageText.text = progress * 100f + "%";
-            Debug.Log(progress);
+            //Debug.Log(progress);
 
             if (operation.progress >= 0.9f)
             {

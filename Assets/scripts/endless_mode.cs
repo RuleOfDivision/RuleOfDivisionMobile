@@ -100,7 +100,7 @@ public class endless_mode : MonoBehaviour
         }
         maxNumFloat = maxNumFloat * scale;
         minNumFloat = minNumFloat * scale;
-        Debug.Log((int)minNumFloat + "Min and max Floats" + (int)maxNumFloat);
+        //Debug.Log((int)minNumFloat + "Min and max Floats" + (int)maxNumFloat);
 
 
 
@@ -149,7 +149,7 @@ public class endless_mode : MonoBehaviour
         //Debug.Log("Created new numbers:");
         var output = new List<int>() { enem0, enem1, enem2, enem3 };
         //Debug.Log("enem0, " + enem0 + " enem1, " + enem1 + " enem2, " + enem2 + " enem3, " + enem3);
-        Debug.Log(output[0] + ", " + output[1] + ", " + output[2] + ", " + output[3] + ", ");
+        //Debug.Log(output[0] + ", " + output[1] + ", " + output[2] + ", " + output[3] + ", ");
 
         return output; // enemyValues;
 
