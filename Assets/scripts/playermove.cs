@@ -48,6 +48,7 @@ public class playermove : MonoBehaviour
 
       void Start()
       {
+            
             TexIndex = PlayerPrefs.GetInt("selSkin");
             playerMat.SetTexture("_MainTex", albedos[TexIndex]);
             attacking = false;
@@ -126,6 +127,7 @@ public class playermove : MonoBehaviour
             if(enemyIsKill)
             {
                   transforms.Clear();
+                  enemyIsKill = false;
                   ReturntMin();
             }
             else
