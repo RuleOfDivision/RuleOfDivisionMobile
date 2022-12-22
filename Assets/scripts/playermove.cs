@@ -123,7 +123,7 @@ public class playermove : MonoBehaviour
             playerAnimator.SetFloat("moving", Mathf.Abs(moving));
             swordAnimator.SetBool("swing", attacking);
             currentNumUI.text = "Nämnare: " + divider;
-
+            Debug.Log("current ui" + currentNumUI.text + "actual correct num: " + divider);
             if(enemyIsKill)
             {
                   transforms.Clear();
@@ -134,6 +134,19 @@ public class playermove : MonoBehaviour
             {
                   ReturntMin();
                   playerPos.LookAt(tMin);
+            }
+//            Debug.Log(SceneManager.GetActiveScene().name);
+            if(Application.platform == RuntimePlatform.Android) {
+                  Debug.Log("it's android");
+                  if(SceneManager.GetActiveScene().name != "mainmenu" && Input.GetKeyDown(KeyCode.Escape)){
+                        Debug.Log("yep, i should change scene");
+                        SceneManager.LoadScene("mainmenu");
+                  }
+                  else if(SceneManager.GetActiveScene().name == "mainmenu" && Input.GetKeyDown(KeyCode.Escape))
+                  {
+                        Application.Quit();
+                  } 
+                             
             }
             //transform.right = GetClosestEnemy(transforms).position;
 
@@ -148,6 +161,7 @@ public class playermove : MonoBehaviour
       public void IncreaseDiv()
       {
             divider++;
+            Debug.Log("increase div to: " + divider);
 
             if (divider >= 10)
             {
@@ -162,6 +176,7 @@ public class playermove : MonoBehaviour
       public void decreaseDiv()
       {
             divider--;
+            Debug.Log("Decrease div to: " + divider);
 
             if (divider >= 10)
             {
