@@ -7,9 +7,8 @@ public class mangyRoundMgr : MonoBehaviour
 {
     public GameObject player;
     //
-    public GameObject enemyPrefab;
+    //public GameObject enemyPrefab;
     private float placeholderFloat = 4;
-    public Vector3[] positionsList;
     public int rounds;
     public int enemiesleft;
 
@@ -18,6 +17,7 @@ public class mangyRoundMgr : MonoBehaviour
     //health
     public GameObject manager;
     public GameObject wrongMath;
+    public GameObject enem;
     public GameObject UI;
     public GameObject phoneUI;
     public TextMeshProUGUI reasonText;
@@ -29,14 +29,14 @@ public class mangyRoundMgr : MonoBehaviour
     public GameObject canvas;
 
     // Update is called once per frame
-    void Newround()
+    void Start()
     {
-        List<int> randHealthList = GetComponent<endless_mode>().MasterRandomizer(rounds);
-            placeholderFloat = randHealthList[0];
+        //List<int> randHealthList = GetComponent<endless_mode>().MasterRandomizer(rounds);
+            //placeholderFloat = randHealthList[0];
             Debug.Log("Newround: " + 0);
-            Vector3 targetPos = positionsList[0];
-            GameObject curEnemy = Instantiate(enemyPrefab, targetPos, Quaternion.identity);
-            curEnemy.GetComponent<enemyHealth>().health = placeholderFloat;
+            //GameObject curEnemy = Instantiate(enemyPrefab, targetPos, Quaternion.identity);
+            GameObject curEnemy = enem.gameObject;
+            curEnemy.GetComponent<enemyHealth>().health = 4;
             curEnemy.GetComponent<enemyHealth>().target = 2;
             curEnemy.GetComponent<enemyHealth>().roundManager = gameObject;
 

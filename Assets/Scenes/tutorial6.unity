@@ -11524,12 +11524,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1818929043}
-  enemyPrefab: {fileID: 0}
-  positionsList: []
   rounds: 0
   enemiesleft: 0
   manager: {fileID: 363496563}
   wrongMath: {fileID: 1773406189}
+  enem: {fileID: 6721377438157726198}
   UI: {fileID: 363496563}
   phoneUI: {fileID: 105373401}
   reasonText: {fileID: 1883599191}
@@ -39723,6 +39722,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 147037386}
     - target: {fileID: 2928146072156544954, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
+      propertyPath: tMin
+      value: 
+      objectReference: {fileID: 6721377438157726192}
+    - target: {fileID: 2928146072156544954, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: joystick
       value: 
       objectReference: {fileID: 399319961}
@@ -49092,6 +49095,7 @@ MonoBehaviour:
   deadprefab: {fileID: 4047182395523574795, guid: 6bf45774e4a00ca42ad0c0ca69fc1db3, type: 3}
   wrongmath: {fileID: 1773406189}
   phoneUI: {fileID: 0}
+  UI: {fileID: 0}
   reason: {fileID: 688131255}
   roundManager: {fileID: 0}
   player: {fileID: 0}
@@ -68691,6 +68695,7 @@ MonoBehaviour:
   deadprefab: {fileID: 4047182395523574795, guid: 6bf45774e4a00ca42ad0c0ca69fc1db3, type: 3}
   wrongmath: {fileID: 1773406189}
   phoneUI: {fileID: 105373401}
+  UI: {fileID: 0}
   reason: {fileID: 1212295143}
   roundManager: {fileID: 0}
   player: {fileID: 1818929043}
@@ -68826,7 +68831,7 @@ MonoBehaviour:
   Text: {fileID: 6721377437919566232}
   health: 0
   textPoint: {fileID: 6721377439466102418}
-  manager: {fileID: 0}
+  manager: {fileID: 363496563}
   deadprefab: {fileID: 4047182395523574795, guid: 6bf45774e4a00ca42ad0c0ca69fc1db3, type: 3}
   wrongmath: {fileID: 1773406189}
   reason: {fileID: 1212295143}

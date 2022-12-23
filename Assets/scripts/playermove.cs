@@ -134,8 +134,15 @@ public class playermove : MonoBehaviour
             }
             else
             {
-                  ReturntMin();
-                  playerPos.LookAt(tMin);
+                  if(SceneManager.GetActiveScene().name != "tutorial6")
+                  {
+                        ReturntMin();
+                        playerPos.LookAt(tMin);
+                  }
+                  else
+                  {
+                        playerPos.LookAt(tMin);
+                  }
             }
 //            Debug.Log(SceneManager.GetActiveScene().name);
             if(Application.platform == RuntimePlatform.Android) {
