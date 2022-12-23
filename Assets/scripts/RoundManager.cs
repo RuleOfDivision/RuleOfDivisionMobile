@@ -8,7 +8,7 @@ public class RoundManager : MonoBehaviour
     // targeting system
     public GameObject player;
     //
-    public GameObject enemyPrefab;
+    //public GameObject enemyPrefab;
     private float placeholderFloat = 4;
     public Vector3[] positionsList;
     public int rounds;
@@ -63,7 +63,8 @@ public class RoundManager : MonoBehaviour
             placeholderFloat = randHealthList[i];
             Debug.Log("Newround: " + i);
             Vector3 targetPos = positionsList[i];
-            GameObject curEnemy = Instantiate(enemyPrefab, targetPos, Quaternion.identity);
+            //GameObject curEnemy = Instantiate(enemyPrefab, targetPos, Quaternion.identity);
+            GameObject curEnemy = this.gameObject;
             curEnemy.GetComponent<enemyHealth>().health = placeholderFloat;
             curEnemy.GetComponent<enemyHealth>().target = 2;
             curEnemy.GetComponent<enemyHealth>().roundManager = gameObject;

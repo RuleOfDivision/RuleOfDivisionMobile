@@ -214,6 +214,11 @@ public class playermove : MonoBehaviour
                         {
                               colList[i].gameObject.GetComponent<TutorialHealth>().takeDamage(divider);
                         }
+                        /*
+                        else if(SceneManager.GetActiveScene().name == "tutorial6")
+                        {
+                              get fukt
+                        }*/
                         else
                         {
                               colList[i].gameObject.GetComponent<enemyHealth>().takeDamage(divider);
