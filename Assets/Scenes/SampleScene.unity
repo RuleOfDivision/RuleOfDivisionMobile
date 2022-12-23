@@ -27978,6 +27978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e175f9d265068a443942100203223988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  phoneUI: {fileID: 1827709655}
 --- !u!1 &1089915051
 GameObject:
   m_ObjectHideFlags: 0
@@ -52472,12 +52473,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 611295513}
     - target: {fileID: 7605721794192863828, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605721794192863828, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 611295513}
     - target: {fileID: 7605721794192863828, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605721794192863828, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: playermove, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605721794192863828, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62e6df803cf883f46be5b7eaa4312956, type: 3}
