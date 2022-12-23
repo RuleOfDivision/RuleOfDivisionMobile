@@ -13,7 +13,7 @@ public class TutorialHealth : MonoBehaviour
     private float target;
     public GameObject deadprefab;
     public GameObject wrongmath;
-    public GameObject UI;
+    //!public GameObject UI;
 
     private float original;
     private float result;
@@ -36,7 +36,7 @@ public class TutorialHealth : MonoBehaviour
         if(health == target)
         {
             Instantiate(deadprefab, transform.position, Quaternion.identity);
-            UI.GetComponent<UI>().enemyDefeated();
+            //!UI.GetComponent<UI>().enemyDefeated();
             Destroy(gameObject);
         }
 

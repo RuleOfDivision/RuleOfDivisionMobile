@@ -41,10 +41,10 @@ public class mangyRoundMgr : MonoBehaviour
             curEnemy.GetComponent<enemyHealth>().roundManager = gameObject;
 
             //health
-            curEnemy.GetComponent<enemyHealth>().manager = manager;
+            //!gogogogogo curEnemy.GetComponent<enemyHealth>().manager = manager;
             curEnemy.GetComponent<enemyHealth>().wrongmath = wrongMath;
             curEnemy.GetComponent<enemyHealth>().phoneUI = phoneUI;
-            curEnemy.GetComponent<enemyHealth>().UI = UI;
+            //!curEnemy.GetComponent<enemyHealth>().UI = UI;
             curEnemy.GetComponent<enemyHealth>().reason = reasonText;
             curEnemy.GetComponent<enemyHealth>().player = playerLoc.gameObject;
             //move

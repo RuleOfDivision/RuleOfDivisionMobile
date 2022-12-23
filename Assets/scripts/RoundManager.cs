@@ -70,7 +70,7 @@ public class RoundManager : MonoBehaviour
             curEnemy.GetComponent<enemyHealth>().roundManager = gameObject;
 
             //health
-            curEnemy.GetComponent<enemyHealth>().manager = manager;
+            //!"threatening"curEnemy.GetComponent<enemyHealth>().manager = manager;
             curEnemy.GetComponent<enemyHealth>().wrongmath = wrongMath;
             curEnemy.GetComponent<enemyHealth>().phoneUI = phoneUI;
             curEnemy.GetComponent<enemyHealth>().UI = UI;

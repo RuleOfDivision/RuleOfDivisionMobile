@@ -9,7 +9,7 @@ public class enemyHealth : MonoBehaviour
     public float health;
     private Quaternion newrot;
     public Transform textPoint;
-    public GameObject manager;
+    //! removed after commit"need to make enemy threatening"public GameObject manager;
     public float target;
     public GameObject deadprefab;
     public GameObject wrongmath;
