@@ -21213,7 +21213,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh90378
+  m_Name: pb_Mesh-154430
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27578,7 +27578,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh90986
+  m_Name: pb_Mesh-154400
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -49844,7 +49844,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh90862
+  m_Name: pb_Mesh-154420
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -70177,6 +70177,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2730718316577807991, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 2730718316577807991, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: m_Name
       value: mainchar
       objectReference: {fileID: 0}
@@ -70278,6 +70282,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
+--- !u!114 &1749337667 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2928146072156544954, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
+  m_PrefabInstance: {fileID: 1749337666}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910023176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 814bba59409610d44bdd7ba970f1b22a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1788423985
 GameObject:
   m_ObjectHideFlags: 0
@@ -76692,7 +76707,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh90092
+  m_Name: pb_Mesh-154410
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -82020,6 +82035,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1724249586}
     m_Modifications:
+    - target: {fileID: 4168181962449442364, guid: c5992ba5fa266a94d85f286bd4b0fdef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1749337667}
+    - target: {fileID: 4168181962449442364, guid: c5992ba5fa266a94d85f286bd4b0fdef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: IncreaseDiv
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168181962858767701, guid: c5992ba5fa266a94d85f286bd4b0fdef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1749337667}
+    - target: {fileID: 4168181962858767701, guid: c5992ba5fa266a94d85f286bd4b0fdef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: decreaseDiv
+      objectReference: {fileID: 0}
     - target: {fileID: 4651124386429382625, guid: c5992ba5fa266a94d85f286bd4b0fdef, type: 3}
       propertyPath: m_Name
       value: phoneUI
@@ -82067,6 +82098,14 @@ PrefabInstance:
     - target: {fileID: 6089677869566633320, guid: c5992ba5fa266a94d85f286bd4b0fdef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304272405755342695, guid: c5992ba5fa266a94d85f286bd4b0fdef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1749337667}
+    - target: {fileID: 7304272405755342695, guid: c5992ba5fa266a94d85f286bd4b0fdef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Attack
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5992ba5fa266a94d85f286bd4b0fdef, type: 3}
