@@ -12,16 +12,14 @@ public class tutorial4check : MonoBehaviour
     {
         winScreen.SetActive(false);
     }
-
+    public void WinScreenDarnIt(){winScreen.SetActive(true);}
     // Update is called once per frame
     void Update()
     {
         if(player.GetComponent<playermove>().divider > 9)
         {
+            //Debug.Log(player.GetComponent<playermove>().divider + "is divider according to check");
             winScreen.SetActive(true);
-        }
-        else
-            winScreen.SetActive(false);
-        
+        }        
     }
 }

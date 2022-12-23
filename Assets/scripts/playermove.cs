@@ -46,9 +46,12 @@ public class playermove : MonoBehaviour
       public Transform enem3;
       */
 
+      void Awake() {
+            divider = 2;     
+
+      }
       void Start()
       {
-            divider = 2;     
             TexIndex = PlayerPrefs.GetInt("selSkin");
             playerMat.SetTexture("_MainTex", albedos[TexIndex]);
             attacking = false;
