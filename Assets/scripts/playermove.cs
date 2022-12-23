@@ -48,7 +48,7 @@ public class playermove : MonoBehaviour
 
       void Start()
       {
-            
+            divider = 2;     
             TexIndex = PlayerPrefs.GetInt("selSkin");
             playerMat.SetTexture("_MainTex", albedos[TexIndex]);
             attacking = false;
@@ -109,6 +109,7 @@ public class playermove : MonoBehaviour
 
       void Update()
       {
+            currentNumUI.SetText("Nämnare: " + divider);
             //moving
             float x = joystick.Horizontal;
             float z = joystick.Vertical;
@@ -122,8 +123,6 @@ public class playermove : MonoBehaviour
             float moving = z + x;
             playerAnimator.SetFloat("moving", Mathf.Abs(moving));
             swordAnimator.SetBool("swing", attacking);
-            currentNumUI.text = "Nämnare: " + divider;
-            Debug.Log("current ui" + currentNumUI.text + "actual correct num: " + divider);
             if(enemyIsKill)
             {
                   transforms.Clear();
@@ -148,6 +147,7 @@ public class playermove : MonoBehaviour
                   } 
                              
             }
+//            Debug.Log("current ui" + currentNumUI.text + "actual correct num: " + divider);
             //transform.right = GetClosestEnemy(transforms).position;
 
       }
