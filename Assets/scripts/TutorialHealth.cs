@@ -6,7 +6,7 @@ using TMPro;
 public class TutorialHealth : MonoBehaviour
 {
     public TextMeshPro Text;
-    public float health;
+    public float health = 4f;
     private Quaternion newrot;
     public Transform textPoint;
     public GameObject manager;
@@ -23,6 +23,7 @@ public class TutorialHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        health = 4f;
         newrot = Text.transform.rotation;
         target = manager.GetComponent<UI>().EnemyTargetHealth;
     }
@@ -30,6 +31,8 @@ public class TutorialHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(health);
+
         Text.transform.rotation = newrot;
         Text.transform.position = textPoint.position;
         Text.text = health.ToString();
