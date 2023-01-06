@@ -3396,7 +3396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!95 &17478347
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3413,7 +3413,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &17972282
 GameObject:
   m_ObjectHideFlags: 0
@@ -3570,7 +3570,7 @@ GameObject:
   m_IsActive: 1
 --- !u!95 &25441476
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3587,7 +3587,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!23 &25441477
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12555,7 +12555,6 @@ MonoBehaviour:
   Text: {fileID: 487350900}
   health: 18
   textPoint: {fileID: 1108015039}
-  manager: {fileID: 0}
   target: 0
   deadprefab: {fileID: 4047182395523574795, guid: 6bf45774e4a00ca42ad0c0ca69fc1db3, type: 3}
   wrongmath: {fileID: 0}
@@ -12760,7 +12759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!95 &218457527
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -12777,7 +12776,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &234959758
 GameObject:
   m_ObjectHideFlags: 0
@@ -16189,7 +16188,7 @@ CharacterController:
   m_Center: {x: 0, y: -0.25, z: 0}
 --- !u!95 &309672140
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -16206,7 +16205,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!54 &309672141
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36750,7 +36749,7 @@ MonoBehaviour:
   gameplayMusic: {fileID: 1724249587}
 --- !u!95 &609735075
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -36767,7 +36766,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!43 &611208749
 Mesh:
   m_ObjectHideFlags: 0
@@ -49669,7 +49668,7 @@ GameObject:
   m_IsActive: 1
 --- !u!95 &887810983
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -49686,7 +49685,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!23 &887810984
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50820,7 +50819,7 @@ CharacterController:
   m_Center: {x: 0, y: -0.25, z: 0}
 --- !u!95 &989860421
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -50837,7 +50836,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!54 &989860422
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -54349,7 +54348,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Introduktion
+  m_text: Viktig info
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -70981,7 +70980,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Steg 4: Att v\xE4lja siffra att dela med"
+  m_Text: "Steg 2: Att v\xE4lja siffra att dela med"
 --- !u!222 &1902456870
 CanvasRenderer:
   m_ObjectHideFlags: 0

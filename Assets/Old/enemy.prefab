@@ -442,7 +442,6 @@ MonoBehaviour:
   Text: {fileID: 1712386340634215305}
   health: 4
   textPoint: {fileID: 1712386340027171971}
-  manager: {fileID: 0}
   target: 0
   deadprefab: {fileID: 4047182395523574795, guid: 6bf45774e4a00ca42ad0c0ca69fc1db3, type: 3}
   wrongmath: {fileID: 0}
@@ -533,7 +532,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 37351f96d6781a740a1aa8d7281b353a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b76e2cc8c2d25fe4f97ca373dec741de, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

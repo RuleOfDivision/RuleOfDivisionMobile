@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Localization-Assets-Shared
+  m_Name: Localization-String-Tables-Spanish (es) 1
   m_EditorClassIdentifier: 
-  m_GroupName: Localization-Assets-Shared
+  m_GroupName: Localization-String-Tables-Spanish (es) 1
   m_Data:
     m_SerializedData: []
-  m_GUID: c07b28bc6c1afb946bd6773c8b6ed7eb
+  m_GUID: 923c820a79b289d499e99b20e2dcd330
   m_SerializeEntries: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 28fd2751337aa9244a26a13da6dc0571, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 43aff1984763cc1498afa80f72cc37cc, type: 2}
-    - {fileID: 11400000, guid: 7bdb079b9ed1f664c94efb16fc69fb59, type: 2}
+    - {fileID: 11400000, guid: 86d71164603732a459dd61d16c71f88f, type: 2}
+    - {fileID: 11400000, guid: cf027a220b1151a4991eb3b88ac18365, type: 2}
   m_FolderEntryCache: []
   m_AssetCollectionEntryCache: []

@@ -2285,7 +2285,6 @@ MonoBehaviour:
   Text: {fileID: 6721377437621937403}
   health: 4
   textPoint: {fileID: 6721377439302362097}
-  manager: {fileID: 0}
   target: 0
   deadprefab: {fileID: 4047182395523574795, guid: 6bf45774e4a00ca42ad0c0ca69fc1db3, type: 3}
   wrongmath: {fileID: 0}
@@ -2293,6 +2292,7 @@ MonoBehaviour:
   UI: {fileID: 0}
   reason: {fileID: 0}
   roundManager: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &6721377438463810705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2375,7 +2375,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 37351f96d6781a740a1aa8d7281b353a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b76e2cc8c2d25fe4f97ca373dec741de, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2463,7 +2463,7 @@ AudioSource:
     m_RotationOrder: 4
 --- !u!95 &6721377438463810716
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2480,7 +2480,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &6721377439302362096
 GameObject:
   m_ObjectHideFlags: 0

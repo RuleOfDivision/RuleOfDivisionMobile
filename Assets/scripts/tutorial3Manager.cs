@@ -8,7 +8,6 @@ public class tutorial3Manager : MonoBehaviour
     public GameObject look;
     public GameObject win;
     private AudioSource correct;
-
     void Start()
     {
         correct = GetComponent<AudioSource>(); 
@@ -27,7 +26,8 @@ public class tutorial3Manager : MonoBehaviour
         {
             move.GetComponent<TUTORIAL3MOVE>().posIndex += 1;
             //look.GetComponent<TUTORIAL3lOOK>().posIndex += 1;
-            correct.Play();
+            if(move.GetComponent<TUTORIAL3MOVE>().posIndex < 5)
+                correct.Play();
         }
     }
 }

@@ -47,6 +47,7 @@ public class TUTORIAL3MOVE : MonoBehaviour
         if(posIndex >4)
         {
             winScreen.SetActive(true);
+            transform.position = new Vector3 (888, 0, 999);
         }
         
         if(posIndex < 5)
