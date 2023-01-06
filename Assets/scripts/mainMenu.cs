@@ -14,7 +14,7 @@ public class mainMenu : MonoBehaviour
     public void StartTutorial()
     {
         Debug.Log("Tutorial");
-        PlayerPrefs.SetString("nextLevel", "tutorial1");
+        PlayerPrefs.SetString("nextLevel", "tutorial3");
         SceneManager.LoadScene("LoadingScreen");
         //SceneManager.LoadScene("tutorial1");
     }
