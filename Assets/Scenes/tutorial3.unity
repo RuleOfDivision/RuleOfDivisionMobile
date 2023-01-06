@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44402242, g: 0.49316543, b: 0.5722324, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10241,7 +10241,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-536942
+  m_Name: pb_Mesh-27448
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30897,7 +30897,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Nu \xE4r det dags att kombinera det du l\xE4rt dig i de tidigare stegen."
+  m_text: "Din karakt\xE4r tittar automatiskt p\xE5 den n\xE4rmaste fienden"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -30980,7 +30980,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-536952
+  m_Name: pb_Mesh-27458
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -31144,7 +31144,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-536962
+  m_Name: pb_Mesh-27468
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -37256,7 +37256,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Steg 3: Vrida och g\xE5"
+  m_Text: "Steg 2: Titta och g\xE5"
 --- !u!222 &1176855585
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -42335,7 +42335,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -8466440248603833898, guid: a0b969f0bd7490e4eaddfd4979cec6eb, type: 2}
   m_audioClip: {fileID: 8300000, guid: 28083177fc16bd54d9465936873fc99e, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -48724,6 +48724,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1903493187}
+    - target: {fileID: 2928146072156544950, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2928146072156544954, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: joystick
       value: 
@@ -48778,7 +48782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6581984412173498731, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.98
+      value: -7.8353395
       objectReference: {fileID: 0}
     - target: {fileID: 6581984412173498731, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: m_LocalPosition.y
@@ -48786,11 +48790,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6581984412173498731, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.7
+      value: -11.164878
       objectReference: {fileID: 0}
     - target: {fileID: 6581984412173498731, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.031095898
+      value: 0.7772149
       objectReference: {fileID: 0}
     - target: {fileID: 6581984412173498731, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: m_LocalRotation.x
@@ -48798,7 +48802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6581984412173498731, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9995165
+      value: 0.6292352
       objectReference: {fileID: 0}
     - target: {fileID: 6581984412173498731, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: m_LocalRotation.z
@@ -48810,7 +48814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6581984412173498731, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 176.436
+      value: 77.987
       objectReference: {fileID: 0}
     - target: {fileID: 6581984412173498731, guid: fe0c94d39db8ce94db25d4a6c3a63031, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -50430,7 +50434,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-536972
+  m_Name: pb_Mesh-27478
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

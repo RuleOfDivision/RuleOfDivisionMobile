@@ -12,6 +12,7 @@ public class tutorial3Manager : MonoBehaviour
     void Start()
     {
         correct = GetComponent<AudioSource>(); 
+        correct.playOnAwake = false;
     }
 
     // Update is called once per frame
@@ -22,10 +23,10 @@ public class tutorial3Manager : MonoBehaviour
             win.SetActive(true);
         }
 
-        if(move.GetComponent<TUTORIAL3MOVE>().moveOver && look.GetComponent<TUTORIAL3lOOK>().mouseOver)
+        if(move.GetComponent<TUTORIAL3MOVE>().moveOver /*&& look.GetComponent<TUTORIAL3lOOK>().mouseOver*/)
         {
             move.GetComponent<TUTORIAL3MOVE>().posIndex += 1;
-            look.GetComponent<TUTORIAL3lOOK>().posIndex += 1;
+            //look.GetComponent<TUTORIAL3lOOK>().posIndex += 1;
             correct.Play();
         }
     }
