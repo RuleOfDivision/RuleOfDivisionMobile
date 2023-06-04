@@ -24,7 +24,7 @@ public class enemyMove : MonoBehaviour
     {
 
         
-        if(Vector3.Distance(playerLocation.position, transform.position) < 4.5f && attacking == false)
+        if(Vector3.Distance(playerLocation.position, transform.position) < 5.4f && attacking == false)
         {
             
             StartCoroutine(attackPlayer());
@@ -73,7 +73,7 @@ public class enemyMove : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         GetComponent<Animator>().SetBool("attacking", false);
         yield return new WaitForSeconds(1.1f);
-        Collider[] colList = Physics.OverlapBox(transform.position, bounds.localScale * 1.5f, Quaternion.identity, whatIsPlayer);
+        Collider[] colList = Physics.OverlapBox(bounds.position, bounds.localScale * 1f, Quaternion.identity, whatIsPlayer);
         
         int i = 0;
         //Check when there is a new collider coming into contact with the box

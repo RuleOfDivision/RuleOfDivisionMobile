@@ -76,29 +76,6 @@ public class playermove : MonoBehaviour
             }
             return tMin;
       }
-      /*public Transform ReturntMin(){
-
-            Collider[] targetColList = Physics.OverlapSphere(playerPos.position, chambersRadius, whatIsEnemy);
-            if(enemyIsKill){
-                  for (int i = 0; i < targetColList.Length; i++)
-                  {
-                        transforms.Remove(targetColList[i].GetComponent<Transform>());
-                        tMin = GetClosestEnemy(transforms);
-                  }
-                  enemyIsKill = false;
-                  return tMin;
-            }
-            else
-            {
-                  for (int i = 0; i < targetColList.Length; i++)
-                  {
-                  transforms.Add(targetColList[i].GetComponent<Transform>());
-                  tMin = GetClosestEnemy(transforms);
-                  }
-                  Debug.Log("i was at house eating dorito when phone ring.");
-                  return null;
-            }
-      }*/
       public Transform ReturntMin()
       {
             Collider[] targetColList = Physics.OverlapSphere(playerPos.position, chambersRadius, whatIsEnemy);
